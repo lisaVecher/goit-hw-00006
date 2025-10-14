@@ -997,4 +997,35 @@ img {
 
 
 /* DESKTOP */
-@media (min-width:1158px) {}
+@media (min-width:1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 120px 0;
+  }
+
+  .section-one {
+    max-width: 1440px;
+    padding: 188px 0;
+  }
+
+  .section-one-heading {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 48px;
+  }
+
+  .advantages-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
