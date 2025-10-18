@@ -5,7 +5,7 @@ body {
 }
 
 .section {
-  padding-top: 120px;
+  padding-top: 96px;
   padding-bottom: 120px;
 }
 
@@ -125,6 +125,15 @@ ul {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-resolution: 192dpi) {
+  .section-one {
+    background-image: linear-gradient(to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/people-office@2x.jpg);
+  }
 }
 
 .section-one-heading {
@@ -390,7 +399,7 @@ img {
 .advantages-list {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 72px;
   margin: auto;
   flex-direction: column;
 }
@@ -407,16 +416,18 @@ img {
 }
 
 
-/* .advantages-list-icon {
-  display: flex;
+.advantages-list-icon {
+  display: none;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
   margin-bottom: 8px;
-  border: 1px solid #8e8f99;
-} */
+  border: 1px solid #8e8f99; */
+}
+
 /*Section 3 Our Team*/
 
 /*.icon-list {
@@ -446,18 +457,23 @@ img {
 
 .our-team-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 24px;
+  gap: 72px;
 }
 
 .our-team-list-item {
-  width: calc((100% - 72px) / 4);
+  width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow:
     0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.list-item-img {
+  max-width: 100%;
 }
 
 .our-team-list-info-container {
@@ -504,17 +520,18 @@ img {
 
 .our-portfolio-list {
   display: flex;
-  flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  flex-direction: column;
 }
+
+
 
 .our-portfolio-list-item {
 
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  width: calc((100% - 48px) / 3);
 }
 
 .our-portfolio-list-item:hover,
@@ -1078,5 +1095,23 @@ img {
     align-items: center;
     gap: 24px;
     margin: auto;
+  }
+
+  .our-team-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .our-team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .our-portfolio-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .our-portfolio-list-item {
+    width: calc((100% - 48px) / 3);
   }
 }
