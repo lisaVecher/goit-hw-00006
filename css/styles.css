@@ -593,10 +593,12 @@ img {
 .footer-information {
   display: flex;
   align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-footer {
-  margin-right: 120px;
+  margin-bottom: 72px;
 }
 
 .logo-title-footer {
@@ -614,8 +616,7 @@ img {
 }
 
 .social-media-container {
-  margin: 0 auto;
-
+  margin-bottom: 72px;
 }
 
 .media-text {
@@ -625,7 +626,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
-
+  text-align: center;
 }
 
 .icon-footer-item {
@@ -673,6 +674,8 @@ img {
 .subscribe-form {
   display: flex;
   gap: 24px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subscribe-form-txt {
@@ -681,6 +684,7 @@ img {
   letter-spacing: 0.02em;
   color: #fff;
   line-height: 1.5;
+  text-align: center;
 }
 
 .subscribe-input {
@@ -695,6 +699,7 @@ img {
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: #ffffff;
+  opacity: 0.3;
 }
 
 .subscribe-input::placeholder {
